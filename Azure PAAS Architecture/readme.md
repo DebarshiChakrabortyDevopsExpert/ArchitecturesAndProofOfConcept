@@ -85,8 +85,11 @@ The results are stored in Azure Cosmos DB.
 ### Web app:
 
 Static files are served by CDN from Blob storage.
+
 A user signs into the web app using Microsoft Entra ID.
+
 Azure API Management acts as a gateway that exposes a REST API endpoint.
+
 HTTP requests from the client trigger an Azure Functions app that reads from Azure Cosmos DB and returns the result.
 
 ![alt text](PAAS_Architecture6.png)
